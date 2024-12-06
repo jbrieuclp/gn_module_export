@@ -20,7 +20,7 @@
   },
   "host": "{{host}}",
   "basePath": "{{base_path}}",
-  "schemes": {{schemes}},
+  "schemes": {{schemes|tojson}},
   "produces": [
     "application/json"
   ],
