@@ -4,6 +4,7 @@
 
 import logging
 import os
+import json
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -132,7 +133,7 @@ def swagger_ressources(id_export=None):
         schemes=scheme,
     )
 
-    return Response(swagger_spec)
+    return jsonify(json.loads(swagger_spec))
 
 
 """
